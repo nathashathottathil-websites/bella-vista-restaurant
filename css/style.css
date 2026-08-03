@@ -1,0 +1,800 @@
+/* ==========================================
+   BELLA VISTA RESTAURANT WEBSITE
+   Main Stylesheet
+========================================== */
+
+/* ===== Universal Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== Body ===== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F8F8F8;
+    color: #444444;
+}
+
+/* ===== Container ===== */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ===== Header ===== */
+header {
+    background-color: #111111;
+    padding: 20px 0;
+}
+
+/* ===== Header Layout ===== */
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ===== Logo ===== */
+.logo h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    color: #D4AF37;
+}
+
+.logo p {
+    color: #ffffff;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+}
+/* ===== Navigation ===== */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #D4AF37;
+}
+/* ===== Reserve Button ===== */
+
+.btn-reserve {
+    background-color: #D4AF37;
+    color: #111111;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-reserve:hover {
+    background-color: #ffffff;
+    color: #111111;
+}
+/* ==========================================
+   HERO SECTION
+========================================== */
+
+.hero {
+    background: url("../images/restaurant-hero.jpg") center center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+/* Dark Overlay */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+/* Hero Content */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    padding: 20px;
+}
+
+.hero-content h3 {
+    color: #D4AF37;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.hero-content h1 {
+    color: #ffffff;
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    color: #f2f2f2;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+/* Hero Buttons */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-primary,
+.btn-secondary {
+    text-decoration: none;
+    padding: 14px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: #D4AF37;
+    color: #111111;
+}
+
+.btn-primary:hover {
+    background: #ffffff;
+}
+
+.btn-secondary {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+.btn-secondary:hover {
+    background: #ffffff;
+    color: #111111;
+}
+/* ==========================================
+   CHEF SECTION
+========================================== */
+
+.chef-section {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+.chef-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.chef-image {
+    flex: 1;
+}
+
+.chef-image img {
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+}
+
+.chef-content {
+    flex: 1;
+}
+
+.section-subtitle {
+    color: #D4AF37;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.chef-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    margin: 20px 0;
+    color: #111111;
+}
+
+.chef-content p {
+    color: #555555;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.chef-features {
+    list-style: none;
+    margin-bottom: 35px;
+}
+
+.chef-features li {
+    margin-bottom: 12px;
+    font-size: 1rem;
+    color: #333333;
+}
+
+.btn {
+    display: inline-block;
+    background: #D4AF37;
+    color: #111111;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #111111;
+    color: #ffffff;
+}
+/* ==========================================
+   FEATURED MENU SECTION
+========================================== */
+
+.menu-section {
+    padding: 100px 0;
+    background: #f8f8f8;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h5 {
+    color: #D4AF37;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.section-title h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    color: #111111;
+    margin-bottom: 20px;
+}
+
+.section-title p {
+    max-width: 650px;
+    margin: auto;
+    color: #666666;
+    line-height: 1.8;
+}
+
+.menu-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu-card {
+    background: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+    width: 340px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.menu-card:hover {
+    transform: translateY(-8px);
+}
+
+.menu-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.menu-content {
+    padding: 25px;
+}
+
+.menu-content h3 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 15px;
+    color: #111111;
+}
+
+.menu-content p {
+    color: #666666;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.price {
+    color: #D4AF37;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+/* ===== Gallery Section ===== */
+
+.gallery-section {
+    padding: 100px 10%;
+    background: #fff;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+/* ===== Testimonials Section ===== */
+
+.testimonials-section {
+    padding: 100px 10%;
+    background: #f8f8f8;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.testimonial-card {
+    background: #ffffff;
+    padding: 35px 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+.stars {
+    color: #d4af37;
+    font-size: 22px;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+.testimonial-card p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+.testimonial-card h4 {
+    color: #111;
+    font-size: 18px;
+    font-weight: 600;
+}
+/* ==========================================
+   RESERVATION SECTION
+========================================== */
+
+.reservation-section {
+    padding: 100px 10%;
+    background: #ffffff;
+}
+
+.reservation-form {
+    max-width: 900px;
+    margin: 50px auto 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.reservation-form input,
+.reservation-form select {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.reservation-form input:focus,
+.reservation-form select:focus {
+    border-color: #D4AF37;
+    box-shadow: 0 0 8px rgba(212,175,55,0.3);
+}
+
+.reservation-form button {
+    grid-column: 1 / -1;
+    padding: 16px;
+    background: #D4AF37;
+    color: #111;
+    border: none;
+    border-radius: 50px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.reservation-form button:hover {
+    background: #111111;
+    color: #ffffff;
+}
+/* ==========================================
+   CONTACT SECTION
+========================================== */
+
+.contact-section {
+    padding: 100px 10%;
+    background: #f8f8f8;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.contact-card {
+    background: #ffffff;
+    padding: 35px 25px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.12);
+}
+
+.contact-card h3 {
+    color: #D4AF37;
+    margin-bottom: 18px;
+    font-size: 22px;
+}
+
+.contact-card p {
+    color: #666666;
+    line-height: 1.8;
+}
+/* ==========================================
+   FOOTER
+========================================== */
+
+.footer {
+    background: #111111;
+    color: #ffffff;
+    padding-top: 70px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 50px;
+    padding: 0 10% 60px;
+}
+
+.footer h2 {
+    color: #D4AF37;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.footer h3 {
+    color: #D4AF37;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    color: #cccccc;
+    line-height: 1.8;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #cccccc;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #D4AF37;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #333333;
+    padding: 25px 10%;
+    color: #999999;
+}
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+/* Tablets */
+@media (max-width: 992px) {
+
+    .chef-container,
+    .footer-container {
+        grid-template-columns: 1fr;
+        display: grid;
+    }
+
+    .menu-grid,
+    .gallery-grid,
+    .testimonials-grid,
+    .contact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .reservation-form {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .chef-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-grid,
+    .gallery-grid,
+    .testimonials-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .section-title h2 {
+        font-size: 2rem;
+    }
+
+    .reservation-form {
+        grid-template-columns: 1fr;
+}
+
+}
+
+/* ==========================================
+   STICKY HEADER
+   ========================================== */
+header {
+    position: relative;
+    background: #111111;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+/* Mobile Navigation */
+@media (max-width: 768px) {
+
+    header .container {
+    flex-direction: column;
+    align-items: center;
+}
+    nav {
+    width: 100%;
+    position: relative;
+    min-height: auto;
+}    
+    /* Navigation Menu */
+   .nav-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: transparent;
+    margin-top: 20px;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+   }
+/* ==========================================
+   MENU PAGE
+   ========================================== */
+
+.menu-page {
+    padding: 100px 0;
+    background: #faf7f2;
+}
+
+
+.menu-title {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.menu-title h1 {
+    font-size: 55px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.menu-title p {
+    font-size: 20px;
+}
+
+
+.menu-category {
+    margin-bottom: 60px;
+}
+
+
+.menu-category h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+.menu-item {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.menu-item h3 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+
+.menu-item p {
+    font-size: 16px;
+    max-width: 600px;
+}
+
+
+.menu-item span {
+    font-size: 22px;
+    font-weight: bold;
+}
+/* ==========================================
+   MENU IMAGE STYLING
+   ========================================== */
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    transition: 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.menu-img {
+    width: 140px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.menu-info {
+    flex: 1;
+}
+
+.menu-info h3 {
+    margin-bottom: 8px;
+}
+
+.menu-info p {
+    margin: 0;
+}
+
+.menu-item span {
+    font-size: 22px;
+    font-weight: bold;
+}
+/* ==========================================
+   ABOUT HERO
+========================================== */
+
+.about-hero {
+    background: url("../images/about-banner.jpg") center center/cover no-repeat;
+    height: 70vh;
+}
+/* ==========================================
+   ABOUT HERO
+========================================== */
+
+.about-hero {
+    background: url("../images/about-banner.jpg") center center/cover no-repeat;
+    height: 70vh;
+}
+/* ==========================================
+   GALLERY HERO
+========================================== */
+
+.hero.gallery-hero {
+    background: linear-gradient(
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.45)
+    ),
+    url("../images/gallery-banner.jpg") center center/cover no-repeat;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero.gallery-hero .hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #ffffff;
+}
